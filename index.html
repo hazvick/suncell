@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suncell</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- *** NAVIGERING *** -->
+    <!-- START -->
+    <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-800 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+        <a href="#" class="flex items-center">
+            <img src="assets/imgs/logo-1.png" class="h-12 mx-3" alt="Suncell">
+        </a>
+        <div class="flex md:order-2">
+            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-1 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Kontakt</button>
+        </div>
+    </nav>
+    <!-- SLUT -->
+
+    <!-- *** HERO BANNER *** -->
+    <!-- START -->
+    <section class="bg-white dark:bg-gray-700 mt-16">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Suncell, <span class="text-yellow-300"> solceller </span> som du kan lita på.</h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Investera i solceller av hög kvalité hos oss på Suncell. Skona plånboken inför elräkningen samtidigt som du skonar miljön. <b>Är du intresserad?</b></p>
+                <a href="#intresse-form" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    Intresseanmälan
+                    
+                </a>
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                    Mer info
+                </a> 
+            </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <img src="assets/imgs/solcell-hero.png" alt="mockup">
+            </div>                
+        </div>
+    </section>
+    <!-- SLUT -->
+
+    <!-- *** KORT INFO *** -->
+    <!-- START -->
+    <section class="bg-white dark:bg-gray-800">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Vi är med dig från början till slut.</h2>
+                <p class="mb-4">Från och med den 1 Januari 2023 drar vi igång verksamheten, men du har möjlighet att redan nu lämna en intresseanmälan.</p>
+                <p class="mb-4">Genom att lämna en intresseanmälan, så hamnar du inte bara före i kön utan kommer även få ta del utav vår exklusiva kampanj på 20%!</p>
+                <p><i><u>OBS! Intresseanmälan inte INTE bindande.</u></i></p>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mt-8">
+                <img class="w-full rounded-lg" src="assets/imgs/section-image-1.png" alt="office content 1">
+                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="assets/imgs/section-image-2.png" alt="office content 2">
+            </div>
+        </div>
+    </section>
+    <!-- SLUT -->
+
+    <!-- *** FORM *** -->
+    <!-- START -->
+    <section class="bg-white dark:bg-gray-700">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                    <h2 class="mb-6 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Lämna en intresseanmälan.</h2>
+                </div>
+            </div>
+            <div id="intresse-form">
+                <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                    <div>
+                        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+
+                            <input type="hidden" name="apikey" value="09bbe31c-223a-4721-8a39-361c2417ce4e">
+                            <input type="hidden" name="subject" value="Suncell: Du har en ny intresseanmälan!">
+                            <input type="checkbox" name="botcheck" id="" style="display: none;">
+
+                            <div class="relative z-0 mb-6 w-full group">
+                                <input type="text" name="fenamn" id="fename" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                <label for="fename" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">För- och efternamn</label>
+                            </div>
+                            <div class="relative z-0 mb-6 w-full group">
+                                <input type="email" name="epost" id="epost" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                <label for="epost" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">E-post</label>
+                            </div>
+                            <div class="relative z-0 mb-6 w-full group">
+                                <input type="text" name="bolag" id="bolag" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                <label for="bolag" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Företag (frivilligt)</label>
+                            </div>
+                            <div class="relative z-0 mb-6 w-full group">
+                                <input type="text" name="message" id="message" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                                <label for="message" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Meddelande</label>
+                            </div>
+                            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Skicka</button>
+                        </form>
+                    </div>
+                    <p class="text-base text-center text-gray-400" id="result"></p>
+            </div>
+        </div>
+    </section>
+    <!-- SLUT -->
+
+    <!-- *** FOOTER *** -->
+    <!-- START -->
+    <footer class="p-4 bg-white shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline">Suncell™</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">Om oss</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Policy</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Licensering</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Kontakt</a>
+            </li>
+        </ul>
+    </footer>
+    <!-- SLUT -->
+    <script src="assets/script.js"></script>
+</body>
+</html>
